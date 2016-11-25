@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TextView_Medium"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginBottom="5dp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_recent_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading_recent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallPulseIndicator"
+                    app:indicatorColor="@color/colorPrimaryDark"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/To_read"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TextView_Medium"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginBottom="5dp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_toread_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading_toread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallPulseIndicator"
+                    app:indicatorColor="@color/colorPrimaryDark"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/more_to_read"
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MORE"
+
+                            android:gravity="center"
+                            style="@style/TextView_Larg"
+                            android:background="@color/colorPrimary"
+                            />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Tags"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TextView_Medium"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_marginBottom="5dp"
+                    />
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tags_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                app:vertical_interval="10dp"
+                app:tag_clickable="true"
+                app:tag_theme="pure_teal" />
+
+    </LinearLayout>
+    </ScrollView>

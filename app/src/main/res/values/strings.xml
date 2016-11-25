@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Book-e</string>
+    <string name="search_hint">Author, Title.. .. </string>
+    <string name="recent">Recent</string>
+    <string name="To_read">To Read</string>
+    <string name="Tags">Tags</string>
+</resources>

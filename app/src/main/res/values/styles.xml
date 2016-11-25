@@ -1,0 +1,67 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextView_Medium_Link" >
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:color"> #0B0080 </item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+
+    <style name="TextView_Medium_Bold" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:color"> @color/cardview_dark_background</item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+    <style name="TextView_Larg" >
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:color"> @color/cardview_dark_background</item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+
+    <style name="TextView_Medium" >
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:color"> @color/cardview_dark_background</item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+    <style name="TextView_Small_Bold" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:color"> @color/cardview_dark_background</item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+
+    <style name="TextView_Small" >
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:color"> @color/cardview_dark_background</item>
+        <item name="android:textColor"> @color/cardview_dark_background </item>
+    </style>
+    
+</resources>
